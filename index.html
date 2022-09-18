@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
   <script src="https://kit.fontawesome.com/a40eeb584d.js" crossorigin="anonymous"></script>
   <title>KanoKari</title>
 </head>
@@ -126,11 +127,20 @@
               </div>
               <div class="friend-post">
                 <div class="post-title">
-                  <h3>Girlfriend Recommendation!</h3>
+                  <h3>Girlfriend Recommendation!</h3><span id="dots">...</span>
                 </div>
                 <div class="post-details">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, similique. Magni possimus repellat nisi ipsam sed vel eveniet, accusantium repudiandae voluptatem odio id vero fuga, repellendus aut labore harum tempora!
-                  Quaerat nesciunt magnam dolor et, sint ratione, eligendi dolorem eos quod veniam ut beatae adipisci dolorum tempore in similique itaque delectus unde, dignissimos saepe? Nulla aut ex adipisci repudiandae repellat.</p>
+                  <span id="more">
+                    <p>Name: Sumi Sakurasawa</p>
+                    <p>Age: 21</p>
+                    <p>Lives in: Tokyo</p>
+                    <p>Hobbies: Calligraphy</p>
+                    <p>Likes: Coffee, Cats, Rain</p>
+                    <p>Hates: Perverts, Sugar, Shabu User</p>
+                    <p>Favorite Food: Sushi, Milktea, Burger, Fries, Fruits</p>
+                    <p>Foods I Hate: Okra, Matcha</p>
+                  </span>
+                  <button onclick="readMore()" id="readMoreBtn">Read More</button>
                 </div>
               </div>
             </div>
