@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/a40eeb584d.js" crossorigin="anonymous"></script>
+  <title>KanoKari</title>
+</head>
+<body>
+  
+  <div id="dashboard-container">
+
+    <!-- Menu Container -->
+    <div id="menu-container">
+      <div id="dashboard">
+        <i class="fa-solid fa-border-all"></i>
+        <h2>KanoKari!</h2>
+      </div>
+
+      <div class="menu-list">
+        <ul>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-house"></i>
+              <h2>Home</h2>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-address-card"></i>
+              <h2>Profile</h2>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-message"></i>
+              <h2>Messages</h2>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-clock-rotate-left"></i>
+              <h2>History</h2>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-list-check"></i>
+              <h2>Tasks</h2>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-users"></i>
+              <h2>Communities</h2>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="menu-list">
+        <ul>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-gear"></i>
+              <h2>Settings</h2>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-person-circle-question"></i>
+              <h2>Support</h2>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-shield-halved"></i>
+              <h2>Privacy</h2>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+    <!-- Main Container -->
+    <div id="main-container">
+
+      <!-- 
+        Contains: Search Bar, Notification Button, 
+                     User Avatar, and User Name,
+      -->
+      <div id="search-notif-user-container">
+        <div id="search-bar-container">
+          <input id="search-input" type="text"
+                 placeholder="Search">
+          <i class="fa-solid fa-magnifying-glass top-bar-icon-size"></i>
+        </div>
+
+        <div id="notif-user-container">
+          <i class="fa-solid fa-bell top-bar-icon-size"></i>
+          <div id="user-avatar"></div>
+          <h3>Kazuya Kinoshita</h3>
+        </div>
+      </div>
+
+
+      <div id="newsfeed-container">
+        <div id="newsfeed-posts">
+          <div class="post">
+
+            <div class="kanokari-recommendations">
+              
+              <div class="friend-avatar-and-metadata">
+                <div class="friend-avatar"></div>
+                <div class="metadata">
+                  <div class="friend-name">
+                    <a href="#"><h4>Rent-A-Girlfriend</h4></a>
+                  </div>
+                  <div class="post-time">
+                    <p>1m ago</p>
+                  </div>
+                </div>
+              </div>
+              <div class="friend-post">
+                <div class="post-title">
+                  <h3>Girlfriend Recommendation!</h3>
+                </div>
+                <div class="post-details">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, similique. Magni possimus repellat nisi ipsam sed vel eveniet, accusantium repudiandae voluptatem odio id vero fuga, repellendus aut labore harum tempora!
+                  Quaerat nesciunt magnam dolor et, sint ratione, eligendi dolorem eos quod veniam ut beatae adipisci dolorum tempore in similique itaque delectus unde, dignissimos saepe? Nulla aut ex adipisci repudiandae repellat.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="post-interactions-and-image">
+
+              <div class="post-interactions">
+                <i class="fa-solid fa-heart"></i>
+
+                <i class="fa-solid fa-comments"></i>
+                <i class="fa-solid fa-share"></i>
+              </div>
+
+              <div class="girlfriend-image">
+                <img src="media-assets/sumi-sakurasawa.jpg" 
+                    alt="an image of sumi sakurasawa">
+              </div>
+          
+
+            </div>
+
+            <div class="user-button-options">
+              <button class="rent-btn">Rent Me!</button>
+              <button class="save-btn">Save</button>
+            </div>
+          </div>
+
+        </div>
+        <div id="newsfeed-announcements">
+          <div class="announcements">
+            <h2>Announcements</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt aut omnis 
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt aut omnis 
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt aut omnis 
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt aut omnis 
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt aut omnis 
+            </p>
+            
+          </div>
+        </div>
+        <div id="newsfeed-trending">
+          <div class="trending">
+            <h1>Top 5 Girlfriends!</h1>
+
+            <div class="top-girlfriends-container">
+
+              <div class="top-gf-item">
+                <div class="avatar-styling" id="gf-one-image"></div>
+                <div class="top-gf-details">
+                  <div class="top-gf-name">Chizuru Mizuhara</div>
+                </div>
+              </div>
+              
+              <div class="top-gf-item">
+                <div class="avatar-styling" id="gf-two-image"></div>
+                <div class="top-gf-details">
+                  <div class="top-gf-name">Marin Kitagawa</div>
+                </div>
+              </div>
+
+              <div class="top-gf-item">
+                <div class="avatar-styling" id="gf-three-image"></div>
+                <div class="top-gf-details">
+                  <div class="top-gf-name">Ruka Sarashina</div>
+                </div>
+              </div>
+              
+              <div class="top-gf-item">
+                <div class="avatar-styling" id="gf-four-image"></div>
+                <div class="top-gf-details">
+                  <div class="top-gf-name">Mitsuri Kanroji</div>
+                </div>
+              </div>
+
+              <div class="top-gf-item">
+                <div class="avatar-styling" id="gf-five-image"></div>
+                <div class="top-gf-details">
+                  <div class="top-gf-name">Shinobu Kocho</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
